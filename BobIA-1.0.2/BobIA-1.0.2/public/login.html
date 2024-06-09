@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/stylelogin.css">
+    <title>3GO</title>
+    <style>
+        .invalid {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo_login">
+            <img style="width: 60px;" src="../public/assets/logoProjeto3GO.png" alt="">
+        </div>
+
+        <h1>Faça o Login em sua conta</h1>
+
+        <div class="input_login">
+            <span>
+                <i class="fa-solid fa-user" style="color: #f5f5f5;"></i>
+                <input type="text" id="ipt_login" placeholder="e-mail ou registro">
+            </span>
+        </div>
+
+        <div class="input_senha">
+            <span>
+                <i class="fa-solid fa-lock" style="color: #f5f5f5;"></i>
+                <input type="password" id="ipt_senha" placeholder="senha">
+            </span>
+        </div>
+
+        <div id="error-message" style="display: none; color: red; margin-top: 5px; text-align: center;">Dados inválidos</div>
+
+        <div class="button">
+            <button onclick="login()">ENTRAR <i class="fa-solid fa-right-to-bracket" style="color: #f5f5f5;"></i></button>
+        </div>
+
+        <p>não lembra a senha? contate o departamento de tecnologia.</p>
+    </div>
+
+    <script>
+        function login() {
+            var login = document.getElementById('ipt_login').value;
+            var senha = document.getElementById('ipt_senha').value;
+            var loginInput = document.getElementById('ipt_login');
+            var senhaInput = document.getElementById('ipt_senha');
+            var errorMessage = document.getElementById('error-message');
+
+            if (login === "adm" && senha === "tresgo") {
+                window.location.href = "index.html";
+            } else {
+                loginInput.classList.add('invalid');
+                senhaInput.classList.add('invalid');
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

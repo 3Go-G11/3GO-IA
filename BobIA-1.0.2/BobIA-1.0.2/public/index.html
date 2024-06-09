@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/metropolis-4" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>BobIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="login_icon">
+            <img src="./assets/login.png" alt="">
+        </div>
+        <div class="saudacao">
+            <p>Olá, <b>ADM!</b></p>
+            <div class="status">
+                <div class="bolinha"></div>
+                <p>online</p>
+            </div>
+        </div>
+
+        <div class="lista">
+            <li><a onclick="mostrar_chamados()">chamados</a></li>
+            <li><a onclick="mostrar_users()">usuários</a></li>
+            <li><a onclick="mostrar_IA()">3GO IA</a></li>
+        </div>
+
+        <div class="social">
+            <a href="https://treego.atlassian.net/jira/servicedesk/projects/SUP/queues/custom/1"><img style="width: 25px;" src="./assets/jira.png" alt=""></a>
+            <img style="width: 25px;" src="./assets/call.png" alt="">
+            <img style="width: 25px;" src="./assets/outlook.png" alt="">
+        </div>
+
+        </div>
+
+    <!-- container dos conteudos -->
+
+    <div class="container_IA"  id="container_IA">
+        <h1>BobIA</h1>
+        <textarea id="pergunta_ia" type="text" placeholder="Digite a pergunta..."></textarea>
+        <br><br>
+        <button onclick="gerarResposta('container_IA', 'pergunta_ia')">Gerar Resposta</button>
+        <h3>Resposta da IA:</h3>
+        <div id="resposta_ia"></div>
+    </div>
+
+    <div class="container_users" id="container_users" style="display:none;">
+        
+    </div>
+
+    <div class="container_chamados" id="container_chamados" style="display:none;">
+        <div class="conteudo_chamado">
+            
+        </div>
+    </div>
+
+    <!-- fim dos containers -->
+   
+   
+   <script>
+       function mostrar_chamados(){
+    document.getElementById('container_chamados').style.display = "block";
+    document.getElementById('container_users').style.display = "none";
+    document.getElementById('container_IA').style.display = "none";
+}
+
+function mostrar_users(){
+    document.getElementById('container_users').style.display = "block";
+    document.getElementById('container_chamados').style.display = "none";
+    document.getElementById('container_IA').style.display = "none";
+}
+
+function mostrar_IA(){
+    document.getElementById('container_IA').style.display = "block";
+    document.getElementById('container_users').style.display = "none";
+    document.getElementById('container_chamados').style.display = "none";
+}
+
+async function gerarResposta(containerId, perguntaId) {
+    const pergunta = document.getElementById(perguntaId).value;
+
+    const response = await fetch('/perguntar', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ pergunta })
+    });
+
+    const data = await response.json();
+
+    document.getElementById('resposta_' + containerId).style.display = 'block';
+    document.getElementById('resposta_' + containerId).innerText = data.resultado;
+}
+
+</script>
