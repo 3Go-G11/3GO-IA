@@ -41,12 +41,19 @@
     <!-- container dos conteudos -->
 
     <div class="container_IA"  id="container_IA">
-        <h1>BobIA</h1>
+        <div class="box_ia">
+
+        <span><img style="width: 60px;" src="../public/assets/logoProjeto3GO.png" alt=""></span>
+        
+        <div class="textarea">
         <textarea id="pergunta_ia" type="text" placeholder="Digite a pergunta..."></textarea>
-        <br><br>
+        </div>
+
         <button onclick="gerarResposta('container_IA', 'pergunta_ia')">Gerar Resposta</button>
         <h3>Resposta da IA:</h3>
         <div id="resposta_ia"></div>
+       
+        </div>
     </div>
 
     <div class="container_users" id="container_users" style="display:none;">
