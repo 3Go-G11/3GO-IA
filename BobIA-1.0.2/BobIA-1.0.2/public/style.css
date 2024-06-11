@@ -161,3 +161,19 @@ button:hover {
     text-align: left;
     display: none;
 }
+
+.bolinha{
+    width: 11.8px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: greenyellow;
+   
+}
+
+.status{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}

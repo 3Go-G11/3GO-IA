@@ -63,18 +63,21 @@
    <script>
        function mostrar_chamados(){
     document.getElementById('container_chamados').style.display = "block";
+    document.getElementById('container_chamados').style.display = "flex";
     document.getElementById('container_users').style.display = "none";
     document.getElementById('container_IA').style.display = "none";
 }
 
 function mostrar_users(){
     document.getElementById('container_users').style.display = "block";
+    document.getElementById('container_users').style.display = "flex";
     document.getElementById('container_chamados').style.display = "none";
     document.getElementById('container_IA').style.display = "none";
 }
 
 function mostrar_IA(){
     document.getElementById('container_IA').style.display = "block";
+    document.getElementById('container_IA').style.display = "flex";
     document.getElementById('container_users').style.display = "none";
     document.getElementById('container_chamados').style.display = "none";
 }
