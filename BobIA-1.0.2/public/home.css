@@ -1,0 +1,511 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  "Roboto", sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+@keyframes contMainAnimation {
+
+    0% {
+        background-position: 50% 50%;
+       
+
+    }
+    50% {
+        background-position: 0% 0%;
+    
+
+      
+
+    } 
+
+    100% {
+        background-position: 30% 30%;
+     
+
+       
+    }
+    
+}
+.sec {
+    width: 100%;
+    height: 100vh;
+}
+.sec.one {
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    
+}
+.sec.two {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+
+}
+.linknav {
+    text-decoration: none;
+    color: #fff;
+    
+}
+.item li{
+    font-size: 18px;
+    width: auto;
+}
+.sec.three{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+.sec.four {
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.navBar {
+    width: 100%;
+    height: 70px;
+    background-color: #1d1d1daf;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+ 
+}
+.navGrid {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 4rem;
+    width: 60%;
+    height: 100%;
+    list-style: none;
+
+}
+.cad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    height: 100%;
+    gap: 1.5rem;
+    list-style: none;
+    
+
+}
+.cad a{
+    text-decoration: none;
+    color: #fff;
+}
+.btnCad {
+    width: auto;
+    padding:  8px 1rem;
+    border-radius: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+.mainContainer {
+    width: 64%;
+    height: 100%;
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contDois {
+    width: 36%;
+    height: 100%;
+    background-image: url('./assets/contMain.png');
+    background-repeat: no-repeat;
+    animation-name:  contMainAnimation ;
+    animation-duration: 30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: rgba(0, 0, 0, 0.522) 0px -300px 200px -28px inset;
+}
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+.iconeAlt{
+    width:400px;
+    height: 400px;
+}
+.iconShow {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tituloMain {
+    font-size: 32px;
+    color: #FFF;
+}
+.icone {
+    width: 50px;
+    height: 50px;
+}
+.btnCad.alt {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+
+}
+.textArea {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+    
+}
+.tituloText {
+    font-size: 36px;
+    font-weight: bold;
+
+}
+.textDefault {
+    font-size: 32px;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #9AC9DB;
+    font-weight: 300;
+}
+.textDefault.white{
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+}
+.textDefault.white.title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+.cardTwo {
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 400;
+    border: none;
+    padding: none;
+    /* text-align: center; */
+}
+.cardTwo.alt {
+    height: 15px;
+    color: #9ac9db;
+}
+
+.circles {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: #009ee7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.circleIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.contentAlt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 1rem;
+
+}
+
+.miniCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.listCards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.circles.one{
+    background-color: #1d1d1d;
+}
+.circles.twoatt{
+    background-color: #804E00;
+    height: auto;
+    padding-bottom: 2rem;
+}
+.circles.tree{
+    background-color: #1d1d1d;
+}
+.textDefault.card {
+    border: none;
+}
+.parallax {
+    width: 100%;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px -300px 200px -28px inset;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%, 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: 110%;
+    animation-name:  contMainAnimation ;
+    animation-duration: 30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.parallax.one {
+    background-image: url('./assets/parallax1.png');
+}
+.parallax.two {
+    background-image: url('https://cdn.pixabay.com/photo/2021/06/23/12/47/wheat-6358659_960_720.jpg');
+}
+.tituloParallax {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 120px;
+        color: #fff;
+
+      
+}
+
+.iconeParallax {
+    width: 80px;
+    height: 80px;
+}
+
+.cardContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.cardDescrible {
+    width: 200px;
+    height: 400px;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding:  2rem 2rem 0 2rem ;
+    gap: 1rem;
+}
+
+.altCaixa {
+    justify-content: start;
+    justify-content: space-around;
+}
+.tituloCard {
+    font-size: 72px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #9AC9DB;
+    height: 70px;
+
+}
+
+.alignCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+.circleCard {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: none;
+    border: 15px solid #d4d4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: -1rem;
+}
+.tituloCard.altDois {
+    font-size: 90px;
+    height: 100px;
+}
+.cardLast {
+    width: 150px;
+    height: 300px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 1rem;
+
+}
+.imgCardLast {
+    width: 175px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    left: -50px;
+}
+.cardDescrible::after {
+    content: '';
+    width: 100%;
+    height: 20%;
+}
+.backIcon {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: -10%;
+    z-index: 1;
+}
+.info {
+    width: 400px;
+    height: 250px;
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    z-index: 3;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2rem 1rem 0 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    gap: 0.5rem;
+
+}
+.info.alternativo {
+    width: 600px;
+    height: 250px;
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 2rem 1rem 0 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    gap: 0.5rem;
+  
+}
+.info p.tituloInfo{
+    font-size: 28px;
+    font-weight: 500;
+}
+.info p.normalTitle{
+    font-size: 22px;
+    font-weight: 400;
+}
+.align {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    z-index: 5 ;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .rodape + .rodape2 {
+    margin-top: 60px; 
+  }
+
+  .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .rodape2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .rodape2 .rodape-item2 {
+    margin: 0 5px; 
+  }
+  .rodape-item, .rodape-item2 {
+    display: flex;
+    align-items: center;
+    flex: 1;   
+    justify-content: center; 
+    margin: 0 10px;
+  }
+  
+  .footer-icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .rodape-item p, .rodape-item2 p {
+    margin: 0;
+  }

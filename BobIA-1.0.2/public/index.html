@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/metropolis-4" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/logoProjeto3GO.png" type="image/x-icon">
+<<<<<<< HEAD:BobIA-1.0.2/BobIA-1.0.2/public/index.html
+    <title>treego IA</title>
+=======
+
+    <title>TrheeGo IA</title>
+>>>>>>> 4142cbb704a50d00a630461d6bae5ca49235ef97:BobIA-1.0.2/public/index.html
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="login_icon">
+            <img src="./assets/login.png" alt="">
+        </div>
+        <div class="saudacao">
+            <p>Olá, <b>ADM!</b></p>
+            <div class="status">
+                <div class="bolinha"></div>
+                <p>online</p>
+            </div>
+        </div>
+
+        <div class="lista">
+            <li><a onclick="mostrar_chamados()">chamados</a></li>
+            <li><a onclick="mostrar_users()">usuários</a></li>
+            <li><a onclick="mostrar_IA()">3GO IA</a></li>
+        </div>
+
+        <div class="social">
+            <a href="https://treego.atlassian.net/jira/servicedesk/projects/SUP/queues/custom/1"><img style="width: 25px;" src="./assets/jira.png" alt=""></a>  
+            <a href="home.html"><img style="width: 25px;" src="./assets/call.png" alt=""></a>
+            <a href="https://www.microsoft.com/pt-pt/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fowa%2F0%2F%3Fstate%3D1%26redirectTo%3DaHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC8&sdf=0&market=pt"><img style="width: 25px;" src="./assets/outlook.png" alt=""></a>
+
+        </div>
+
+        </div>
+
+    <!-- container dos conteudos -->
+
+    <div class="container_IA"  id="container_IA">
+        <div class="box_ia">
+
+        <!-- <span><img style="width: 60px;" src="../public/assets/logoProjeto3GO.png" alt=""></span> -->
+        
+        <div class="textarea">
+        <textarea id="pergunta_ia" type="text" placeholder="Digite a pergunta..."></textarea>
+        </div>
+
+        <button onclick="gerarResposta('container_IA', 'pergunta_ia')"><img src="./assets/send-message.png" alt=""></button>
+        <h3>Resposta da IA:</h3>
+        <div id="resposta_ia"></div>
+       
+        </div>
+    </div>
+
+    <div class="container_users" id="container_users" style="display:none;">
+        <div class="grid-container">
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Alice Ferreira</p>
+                    <p>aliceferreira@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Bruno Messias</p>
+                    <p>brunomessias@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Carla Fagundes</p>
+                    <p>carlafagundes@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Diego Francisco</p>
+                    <p>diegofrancisco@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Artur Albuquerque</p>
+                    <p>arturalbuq@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Bianca Camargo</p>
+                    <p>biancacamargo@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Rafaela Cintia</p>
+                    <p>rafaelacintia@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Diego Camargo</p>
+                    <p>diegocamargo@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">João Paulo</p>
+                    <p>joaopaulo@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Eva Almeida</p>
+                    <p>evaalmeida@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Samuel Rubens</p>
+                    <p>samuelrubens@gmail.com</p>
+                </div>
+            </div>
+            <div class="user-card">
+                <div class="img_profile">
+                    <img src="./assets/imgUsuário.png" alt="Usuário" class="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Felipe Santos</p>
+                    <p>felipesantos@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container_chamados" id="container_chamados" style="display:none;">
+        <div class="conteudo_chamado">
+            
+        </div>
+    </div>
+   
+   <script>
+              async function gerarResposta() {
+            const pergunta = document.getElementById('pergunta_ia').value;
+
+            const response = await fetch('/perguntar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ pergunta })
+            });
+
+            const data = await response.json();
+
+            resposta_ia.style.display = 'block';
+            document.getElementById('resposta_ia').innerText = data.resultado;
+        }
+       function mostrar_chamados(){
+    document.getElementById('container_chamados').style.display = "block";
+    document.getElementById('container_chamados').style.display = "flex";
+    document.getElementById('container_users').style.display = "none";
+    document.getElementById('container_IA').style.display = "none";
+}
+
+function mostrar_users(){
+    document.getElementById('container_users').style.display = "block";
+    document.getElementById('container_users').style.display = "flex";
+    document.getElementById('container_chamados').style.display = "none";
+    document.getElementById('container_IA').style.display = "none";
+}
+
+function mostrar_IA(){
+    document.getElementById('container_IA').style.display = "block";
+    document.getElementById('container_IA').style.display = "flex";
+    document.getElementById('container_users').style.display = "none";
+    document.getElementById('container_chamados').style.display = "none";
+}
+
+
+</script>
