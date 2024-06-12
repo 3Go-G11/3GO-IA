@@ -113,6 +113,15 @@ body {
     height: 250px;
 }
 
+a{
+    cursor: pointer;
+}
+
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
 
 
 .box_ia{
